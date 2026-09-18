@@ -1,0 +1,294 @@
+.sidebar {
+  width: 330px;
+  min-width: 330px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* PROFILE */
+
+.sidebar-profile {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-text h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #111827;
+}
+
+.profile-text span {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #22c55e;
+}
+
+.profile-btn {
+  border: none;
+  background: #f3f4f6;
+  color: #111827;
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.profile-btn:hover {
+  background: #e5e7eb;
+}
+
+/* SEARCH */
+
+.chat-search {
+  margin: 15px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.search-symbol {
+  font-size: 14px;
+}
+
+.chat-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  color: #111827;
+}
+
+.chat-search input::placeholder {
+  color: #9ca3af;
+}
+
+/* MESSAGE HEADER */
+
+.chat-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px 12px;
+}
+
+.chat-list-header h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.chat-list-header span {
+  min-width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #111827;
+  color: white;
+  font-size: 11px;
+}
+
+/* USERS */
+
+.users-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.users-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.users-list::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.user-item:hover {
+  background: #f9fafb;
+}
+
+.active-user {
+  background: #f3f4f6;
+  border-left: 3px solid #111827;
+}
+
+/* USER AVATAR */
+
+.user-avatar {
+  position: relative;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.online-dot {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* USER INFO */
+
+.user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-time {
+  font-size: 10px;
+  color: #9ca3af;
+  white-space: nowrap;
+}
+
+.user-info p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #9ca3af;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* NO USERS */
+
+.no-users {
+  padding: 50px 20px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+.no-users div {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.no-users p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* BOTTOM */
+
+.sidebar-bottom {
+  padding: 15px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  gap: 8px;
+}
+
+.sidebar-bottom button {
+  flex: 1;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 7px;
+  background: #f3f4f6;
+  color: #374151;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sidebar-bottom button:hover {
+  background: #e5e7eb;
+}
+
+.sidebar-bottom .logout-btn {
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+.sidebar-bottom .logout-btn:hover {
+  background: #fee2e2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 280px;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .chat-main {
+    display: none;
+  }
+}

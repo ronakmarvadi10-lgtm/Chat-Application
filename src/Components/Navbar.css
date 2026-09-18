@@ -1,0 +1,44 @@
+.navbar {
+  height: 65px;
+  padding: 0 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #111827;
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 23px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-user {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.navbar-logout {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+
+  background: white;
+  color: #111827;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-logout:hover {
+  background: #e5e7eb;
+}
